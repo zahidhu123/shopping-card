@@ -53,10 +53,18 @@ function App() {
   ])
 
 
+
+  const [cart, setCart] = useState([])
+    console.log(cart)
+  const addToCard = (data) => {
+    setCart([...cart, data])
+  }
+
+
   return (
     <>
       <Header />
-      <ProductList product={product}></ProductList>
+      <ProductList product={product} addToCard={addToCard}></ProductList>
     </>
 
   );
