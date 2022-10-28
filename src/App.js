@@ -3,6 +3,9 @@ import './App.css';
 import Header from './component/header';
 import { useState } from 'react';
 import ProductList from './component/productList';
+import Home from './component/home';
+import Manu from './component/manu';
+import Person from './component/person';
 
 function App() {
 
@@ -55,7 +58,7 @@ function App() {
 
 
   const [cart, setCart] = useState([])
-    console.log(cart)
+  console.log(cart)
   const addToCard = (data) => {
     setCart([...cart, data])
   }
@@ -65,6 +68,9 @@ function App() {
     <>
       <Header />
       <ProductList product={product} addToCard={addToCard}></ProductList>
+      {/* <Home />
+      <Manu />
+      <Person/> */}
     </>
 
   );
