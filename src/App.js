@@ -68,8 +68,8 @@ function App() {
     <>
       <Header />
       <ProductList product={product} addToCard={addToCard}></ProductList>
-      {/* <Home />
-      <Manu />
+      <Home />
+      {/* <Manu />
       <Person/> */}
     </>
 
