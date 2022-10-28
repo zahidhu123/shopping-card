@@ -70,7 +70,7 @@ function App() {
       <ProductList product={product} addToCard={addToCard}></ProductList>
       <Home />
       <Manu />
-      {/* <Person/> */}
+      <Person/>
     </>
 
   );
