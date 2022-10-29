@@ -18,23 +18,19 @@ export default function Person() {
             .then(res => {
                 console.log(res.data)
                 setPersonData(res.data.data)
-
             })
     }
 
-
-
     const sendData = () => {
-        if(age > 18){
+        if (age > 18) {
             alert("Yea allow");
         }
-        else{
+        else {
             alert("Not allow");
         }
-       
-       console.log(age)
-    }
 
+        console.log(age)
+    }
 
     return (
         <div>
