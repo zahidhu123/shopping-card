@@ -66,10 +66,10 @@ function App() {
 
   return (
     <>
-      <Header />
+      {/* <Header />
       <ProductList product={product} addToCard={addToCard}></ProductList>
       <Home />
-      <Manu />
+      <Manu /> */}
       <Person/>
     </>
 
