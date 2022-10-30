@@ -6,6 +6,7 @@ import ProductList from './component/productList';
 import Home from './component/home';
 import Manu from './component/manu';
 import Person from './component/person';
+import CartList from './component/cartList';
 
 function App() {
 
@@ -68,9 +69,10 @@ function App() {
     <>
       <Header />
       <ProductList product={product} addToCard={addToCard}></ProductList>
-      <Home />
+      <CartList cart={cart}/>
+      {/* <Home />
       <Manu />
-      <Person/>
+      <Person/> */}
     </>
 
   );
