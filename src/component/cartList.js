@@ -14,7 +14,7 @@ export default function CartList({ cart }) {
                   <button>-</button>
                   <span>{cartItem.quantity}</span>
                   <button>+</button>
-                  <span>{cartItem.price}</span>
+                  <span>Rs. {cartItem.price}</span>
                 </div>
               )
             })
