@@ -61,15 +61,16 @@ function App() {
   const [cart, setCart] = useState([])
   console.log(cart)
   const addToCard = (data) => {
-    setCart([...cart, data])
+    setCart([...cart, {...data, quantity: 1}])
   }
 
 
   return (
     <>
       <Header />
+      <CartList cart={cart} />
       <ProductList product={product} addToCard={addToCard}></ProductList>
-      <CartList cart={cart}/>
+
       {/* <Home />
       <Manu />
       <Person/> */}
